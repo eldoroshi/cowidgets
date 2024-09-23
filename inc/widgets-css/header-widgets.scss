@@ -1,0 +1,177 @@
+
+  @import 'header/ce-nav-menu';
+
+  /* Icon common CSS */
+  
+  .ce-icon {
+    display: inline-block;
+  }
+  
+  /* Menu Cart CSS */
+  
+  .ce-cart-menu-wrap-custom {
+    display: inline-block;
+    line-height: 1;
+  
+    .count {
+      border-color: #75c32c;
+      color: #75c32c;
+  
+      &:after {
+        border-color: #75c32c;
+        color: #75c32c;
+      }
+  
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      min-width: 2.1em;
+      min-height: 2.1em;
+      font-size: 0.860em;
+      line-height: 1.8;
+      border-radius: 0.3em 0.3em 0.3em 0.3em;
+      border-width: 2px;
+      border-style: solid;
+      padding: 12px 24px;
+    }
+  }
+  
+  /* Default skin for cart*/
+  
+  .ce-cart-menu-wrap-default {
+    display: inline-block;
+    line-height: 1;
+  
+    .count {
+      border-color: #75c32c;
+      color: #75c32c;
+  
+      &:after {
+        border-color: #75c32c;
+        color: #75c32c;
+        bottom: 100%;
+        margin-bottom: 0;
+        height: .8em;
+        width: .8em;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -.6em;
+        content: ' ';
+        position: absolute;
+        pointer-events: none;
+        border-width: 2px;
+        border-style: solid;
+        border-top-left-radius: 10em;
+        border-top-right-radius: 10em;
+        border-bottom: 0;
+      }
+  
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      min-width: 2.1em;
+      min-height: 2.1em;
+      font-size: 0.860em;
+      line-height: 1.8;
+      border-radius: 0em 0em 0.3em 0.3em;
+      border-width: 2px;
+      border-style: solid;
+      padding: 0 .4em;
+    }
+  }
+  
+  .elementor-widget-ce-cart {
+    &:not(.ce-menu-cart--show-subtotal-yes) .ce-menu-cart__toggle .elementor-button-text {
+      display: none;
+    }
+  
+    &.toggle-icon--bag-light .ce-menu-cart__toggle .elementor-button-icon i:before {
+      content: '\e8e3';
+    }
+  
+    &.toggle-icon--bag-medium .ce-menu-cart__toggle .elementor-button-icon i:before {
+      content: '\e8e4';
+    }
+  
+    &.toggle-icon--bag-solid .ce-menu-cart__toggle .elementor-button-icon i:before {
+      content: '\e8e5';
+    }
+  }
+  
+  .ce-menu-cart__toggle {
+    .elementor-button {
+      background: transparent;
+      border-radius: 0;
+      color: #818a91;
+      border: 1px solid;
+      border-color: inherit;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  
+    .elementor-button-text {
+      margin-right: 0.3em;
+    }
+  
+    .elementor-button-icon {
+      position: relative;
+      -webkit-transition: color 0.1s;
+      -o-transition: color 0.1s;
+      transition: color 0.1s;
+    }
+  }
+  
+  .ce-menu-cart--items-indicator-bubble .ce-menu-cart__toggle .elementor-button-icon[data-counter]:before {
+    content: attr(data-counter);
+    display: block;
+    position: absolute;
+    min-width: 1.6em;
+    height: 1.6em;
+    line-height: 1.5em;
+    top: -0.7em;
+    right: -0.7em;
+    border-radius: 100%;
+    color: #fff;
+    background-color: #d9534f;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .ce-menu-cart--items-indicator-plain .ce-menu-cart__toggle .elementor-button-icon[data-counter]:before {
+    content: attr(data-counter);
+    display: inline-block;
+    font-weight: normal;
+  }
+  
+  .ce-menu-cart--empty-indicator-hide .ce-menu-cart__toggle .elementor-button .elementor-button-icon[data-counter]:before {
+    content: none;
+    display: none;
+  }
+  
+  .ce-menu-cart__toggle {
+    .elementor-button-icon {
+      -webkit-box-ordinal-group: 16;
+      -webkit-order: 15;
+      -ms-flex-order: 15;
+      order: 15;
+    }
+  
+    &.elementor-button-wrapper .elementor-button {
+      color: #4d4848;
+    }
+  }
+
+
+  .ce-site-logo{
+      .ce-site-logo-container{
+        line-height:1;
+      }
+  }

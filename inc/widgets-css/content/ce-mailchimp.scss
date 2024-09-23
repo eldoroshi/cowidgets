@@ -1,0 +1,105 @@
+.ce-mailchimp-form{
+	.row{
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+	.cl-head{ display: none; }
+	.ce-head{
+		h2{
+			color: #061020;
+			
+	    	font-size: 30px;
+	    	font-weight: 700;
+		}
+		p{
+			color: #6d727c;
+			margin: 0;
+			margin-top: 5px;
+	    	font-size: 18px;
+		}
+	}
+	input[type=email]::placeholder{
+		color: #6d727c;
+		text-tranform: capitalize;
+	}
+	p{ position: relative; }
+	input[type=email]{
+		color: #6d727c;
+		border-radius: 25px;
+		border: 1px solid #ecf2f7;
+    	padding: 10px 20px;
+    	width: 100%;
+    	padding-right: 150px;
+	}
+	input[type=submit]{
+		background: #000;
+	    color: #fff;
+	    border-radius: 25px;
+	    height: 50px;
+	    padding: 10px 40px;
+	    text-transform: uppercase;
+	    position: absolute;
+	    right: 0;	   
+	    font-size: 13px;
+	    font-weight: 500;
+	    transition: all 0.3s;
+	    &:hover{
+	    	background: #01B7CC;
+	    }
+	}
+	background: url(../../assets/images/formbg.png) no-repeat;
+    background-size: cover;
+    padding: 33px 40px;    
+    box-shadow: 0 0 35px 0px rgba(22, 12, 96, 0.09);
+    border-radius: 10px;
+}
+.ce-mailchimp-form.light{
+	background: transparent;
+	box-shadow: none;
+	padding: 33px 0px;
+	input[type=email]{ border: none; }
+	.ce-head h5{ 
+		color: #667687; 
+		line-height: 27px;
+		text-transform: inherit;
+		font-size: 16px;
+    	font-weight: normal;
+	}
+}
+.ce-mailchimp-form.dark{
+	background: transparent;
+	box-shadow: none;
+	padding: 33px 0px;
+	input[type=email]{ 
+		border: none; 
+		background: #192331;
+	}
+	.ce-head h2{
+		color: #f6fafc;
+	}
+	.ce-head h5{ 
+		color: #667687; 
+		line-height: 24px;
+		font-size: 16px;
+		text-transform: inherit;
+		font-weight: normal;
+	 }
+	input[type=submit]{
+		background-image: linear-gradient(300deg, #025ba3 34%, #03a18e 100%);
+	}
+
+}
+@media( max-width: 767px ){
+	.ce-mailchimp-form .row{
+		display: block;
+	}
+	.ce-mailchimp-form .ce-head{
+		display: none;
+	}
+}
+@media( max-width: 320px ){	
+	.ce-mailchimp-form input[type=submit]{
+		position: static;
+	}
+}

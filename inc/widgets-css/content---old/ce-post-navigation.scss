@@ -1,0 +1,32 @@
+.ce-post-navigation{
+    &-style-lark{
+        .nav-wrapper{
+            display:flex;
+            
+            .nav-item{
+                flex:1;
+                &.item-back_to{
+                    text-align:center;
+                }
+                &.item-next{
+                    text-align:right;
+                }
+
+                .item-label{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-bottom:8px;
+                    text-transform:uppercase;
+                }
+
+                .item-title{
+                    font-size:36px;
+                    line-height:48px;
+                    letter-spacing:-0.72px;
+                    font-weight:300;
+                }
+            }
+        }
+    }
+}

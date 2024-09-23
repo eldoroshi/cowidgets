@@ -1,0 +1,45 @@
+.ce-mailchimp-form{
+	.ce-head{
+		h2{
+			color: #061020;
+			
+	    	font-size: 30px;
+	    	font-weight: 700;
+		}
+		h5{
+			color: #6d727c;
+			
+	    	font-size: 18px;
+		}
+	}
+	input[type=email]::placeholder{
+		color: #6d727c;
+		text-tranform: capitalize;
+	}
+	p{ position: relative; }
+	input[type=email]{
+		color: #6d727c;
+		border-radius: 25px;
+		border: 1px solid #ecf2f7;
+    	padding: 10px 20px;
+    	width: 100%;
+    	padding-right: 150px;
+	}
+	input[type=submit]{
+		background: #000;
+	    color: #fff;
+	    border-radius: 25px;
+	    height: 50px;
+	    padding: 10px 40px;
+	    text-transform: uppercase;
+	    position: absolute;
+	    right: 0;	   
+	    font-size: 13px;
+	    font-weight: 500;
+	}
+	background: url(../../assets/images/formbg.png) no-repeat;
+    background-size: cover;
+    padding: 40px;    
+    box-shadow: 0 0 5px 0 rgba(87, 90, 91, 0.2);
+    border-radius: 10px;
+}

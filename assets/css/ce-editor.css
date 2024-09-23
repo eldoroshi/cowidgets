@@ -1,0 +1,9 @@
+.elementor-control-type-select2 .elementor-control-input-wrapper{
+    min-width:132px;
+}
+
+.important_note{
+    font-size:12px;
+    line-height:18px;
+    opacity:0.6;
+}

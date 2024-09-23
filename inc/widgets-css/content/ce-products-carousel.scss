@@ -1,0 +1,35 @@
+.ce-products-carousel{
+    ul.products{
+        li.product{
+            float:none;
+            margin:0;
+            &.ce-animation{
+                -webkit-animation-duration: 0.3s;
+                -moz-animation-duration: 0.3s;
+                -o-animation-duration: 0.3s;
+                animation-duration: 0.3s;
+            }
+        }
+        
+    }
+
+    .ce-products-carousel-controls{
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        a{
+            width:36px;
+            height:36px;
+            border-radius:50%;
+            background:#EEEEEE;
+            text-align:center;
+            display:inline-flex;
+            align-items:center;
+            justify-content: center;
+            margin:0 15px;
+        }
+        @media (max-width:991px){
+            display:none;
+        }
+    }
+}

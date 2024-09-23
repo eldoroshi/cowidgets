@@ -1,0 +1,317 @@
+.ce-testimonial-style-beas{
+    .content{
+        padding-left:30px;
+        @include md{
+            padding-left:100px;
+        }
+        position:relative;
+      svg{
+        position:absolute;
+        left:0px;
+        top:0px;
+        path{
+          fill:#000;
+          .light-text &{
+            color:#fff;
+          }
+        }
+      }
+      .text{
+        font-size: 24px;
+        line-height: 36px;
+        padding-bottom:30px;
+        @include md{
+            padding-bottom:80px;
+        }
+      }
+    }
+    .data{
+      border-top:2px solid rgba(0,0,0,1);
+      padding-top:16px;
+      font-size:18px;
+      line-height:28px;
+      .light-text &{
+        border-top:2px solid rgba(255,255,255,1)
+      }
+      position:relative;
+    }
+  
+    .ce-testimonial-carousel-controls{
+      position:absolute;
+      top:30px;;
+      right:10px;
+      a{
+        padding:0 16px;
+        &:last-child{
+          padding-right:0px;
+        }
+      }
+      i{
+        font-size:24px;
+        line-height:24px;
+      }
+    }
+  }
+
+
+  .ce-testimonial-style-tapi{
+    .ce-testimonial-item{
+      position:relative;
+    }
+    .inner-wrapper{
+      padding:0 20px;
+      @include md{
+        padding:0 80px;
+      }
+    }
+    .content{
+        
+        position:relative;
+      
+      .text{
+        @media (max-width:767px){
+          font-size:20px !important;
+          line-height:28px !important;
+        }
+        font-size: 24px;
+        line-height: 36px;
+        padding-bottom:40px;
+        @include md{
+            padding-bottom:40px;
+        }
+      }
+    }
+    .data{
+      border-top:2px solid rgba(0,0,0,1);
+      padding-top:16px;
+      font-size:18px;
+      line-height:28px;
+      .light-text &{
+        border-top:2px solid rgba(255,255,255,1)
+      }
+      position:relative;
+    }
+  
+    .ce-testimonial-carousel-controls{
+      position:absolute;
+      @media (max-width:991px){
+        display:none;
+        
+      }
+      top:calc(50% - 57px);
+      @include transform(translateY(-50%));
+      width:100%;
+      a{
+        padding:0 16px;
+        &:last-child{
+          padding-right:0px;
+        }
+      }
+      i{
+        font-size:24px;
+        line-height:24px;
+      }
+      .ce-prev{
+        position: absolute;
+        left: -80px;
+      }
+      .ce-next{
+        position: absolute;
+        right: 125px;
+      }
+    }
+  }
+
+
+  /* TISTA */
+.ce-testimonial-style-tista{
+  margin:0 auto;
+  .text{
+    max-width:770px;
+    margin:0 auto;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 48px;
+    /* or 133% */
+    
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+}
+.ce-testimonial-style-tista-nav{
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  margin-top:80px !important; 
+  .nav-item{
+    opacity:0.5;
+    cursor:pointer;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+
+    text-align: center;
+
+    @include transition(all 0.3s);
+    &.active{
+      opacity:1;
+    }
+
+    &:hover{
+      opacity:1;
+    }
+  }
+}
+  /* END TISTA */
+
+
+  /* Talia */
+
+  .ce-testimonial-style-talia{
+    margin:0 auto;
+    text-align:center;
+    svg{
+      text-align:center;
+      margin-bottom:40px;
+    }
+    .text{
+      font-size:24px;
+      line-height:36px;
+    }
+    .data{
+      margin-top:40px;
+    }
+    .ce-testimonial-carousel-controls{
+      margin-top:40px;
+      a{
+        margin:0 15px;
+      }
+    }
+  }
+  .testimonial-section {
+    position: relative;
+    padding: 100px 0px 100px;
+    background-color: #f3f5fb;
+    .owl-dots {
+      display: none;
+    }
+    .owl-nav {
+      display: none;
+    }
+    .inner-container {
+      position: relative;
+    }
+    .patern-layer-one {
+      position: absolute;
+      right: -115px;
+      top: -60px;
+      width: 294px;
+      height: 292px;
+      background-repeat: no-repeat;
+    }
+  }
+  .ce-testimonial-style-alder {
+    position: relative;
+    .inner-box {
+      position: relative;
+      border-radius: 5px;
+      text-align: center;
+      padding: 40px 60px 50px;
+      background-color: #ffffff;
+      .author-image {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 50px;
+      }
+      h4 {
+        position: relative;
+        font-weight: 500;
+        color: #5d6cc1;
+        line-height: 1.3em;
+        margin-top: 30px;
+        font-size: 22px;
+      }
+      .rating {
+        position: relative;
+        color: #f6a46a;
+        font-size: 16px;
+        margin-top: 20px;
+        .fa {
+          position: relative;
+          margin: 0px 1px;
+        }
+      }
+      .text {
+        position: relative;
+        color: #373737;
+        font-size: 16px;
+        line-height: 1.8em;
+        margin-top: 35px;
+      }
+    }
+  }
+  
+/*Modern*/
+.ce-testimonial-style-modern{
+  text-align: center;
+  img{ 
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 18px !important;
+  }
+  .data{
+    .title{
+      margin-bottom: 8px;
+    }
+    .position{
+      margin-bottom: 10px;
+    } 
+    .text{
+      width: 70%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }  
+ 
+}
+.elementor-widget-ce-testimonial-carousel[data-style="modern"] {
+  .ce-carousel-head{
+    position: static;    
+  }
+  .ce-testimonial-carousel-controls{
+      position: static;
+      top: 0;
+      right: 0;
+      a{
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        text-align: center;
+        line-height: 50px;
+        display: inline-block;
+        border-radius: 50%;
+        box-shadow: 0 0 35px 0px rgba(22, 12, 96, 0.09);
+        transition: box-shadow 0.3s;
+        &:hover{
+          box-shadow: 0 0 35px 0px rgba(0, 0, 0, 0);
+        }
+      }
+      a.ce-next{
+        position: absolute;       
+        right: 0;
+        top: 80px;
+      }
+      a.ce-prev{
+        position: absolute;        
+        left: 0;
+        top: 80px;
+      }
+    }
+}

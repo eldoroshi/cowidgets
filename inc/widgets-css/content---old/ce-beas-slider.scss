@@ -1,0 +1,39 @@
+.ce-beas-slider{
+    .content{
+        
+        font-style: normal;
+        font-weight: normal;
+        font-size:20px;
+        line-height:28px;
+        padding-left:30px;
+        padding-right:40px;
+        @include lg{
+            font-size: 48px;
+            line-height: 60px;
+            padding-left:100px;
+            padding-right:200px;
+        }
+        /* or 125% */
+
+        letter-spacing: -0.02em;
+
+        color: #FFFFFF;
+
+        text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        position:absolute;
+        top:0;
+        left:0;
+
+        p{
+            margin:0;
+            padding:0;
+        }
+    }
+
+    .image{
+        padding-top:60px;
+        @include lg{
+            padding-top:150px;
+        }
+    }
+}

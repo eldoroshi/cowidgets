@@ -1,0 +1,160 @@
+@-webkit-keyframes "ripple" {
+	70% {
+		box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+@keyframes "ripple" {
+	70% {
+		box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+.play-box {
+	position: relative;
+	float: left;
+	width: 60px;
+	height: 60px;
+	color: #5d6cc1;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	line-height: 25px;
+	display: inline-block;
+	z-index: 1;
+	padding: 3.1%;
+	transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	background-color: #dfe2f3;
+	.overlay-box {
+		span {
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			left: 50%;
+			top: 50%;
+			z-index: 99;
+			color: #5d6cc1;
+			font-weight: 400;
+			font-size: 12px;
+			text-align: center;
+			border-radius: 50%;
+			padding-left: 7px;
+			background-color: #dfe2f3;
+			display: inline-block;
+			margin-top: -30px;
+			margin-left: -35px;
+			transition: all 900ms ease;
+			-moz-transition: all 900ms ease;
+			-webkit-transition: all 900ms ease;
+			-ms-transition: all 900ms ease;
+			-o-transition: all 900ms ease;
+			box-shadow: 0px 0px 15px rgba(0,0,0,0.10);
+		}
+	}
+	.ripple {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: 60px;
+		width: 60px;
+		margin-left: -1px;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+		-webkit-box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+		-moz-box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+		-ms-box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+		-o-box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+		box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+		-webkit-animation: ripple 3s infinite;
+		-moz-animation: ripple 3s infinite;
+		-ms-animation: ripple 3s infinite;
+		-o-animation: ripple 3s infinite;
+		animation: ripple 3s infinite;
+		&:before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 60px;
+			width: 60px;
+			margin-left: -1px;
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+			-webkit-box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+			-moz-box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+			-ms-box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+			-o-box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+			box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+			-webkit-animation: ripple 3s infinite;
+			-moz-animation: ripple 3s infinite;
+			-ms-animation: ripple 3s infinite;
+			-o-animation: ripple 3s infinite;
+			animation: ripple 3s infinite;
+			-webkit-animation-delay: .9s;
+			-moz-animation-delay: .9s;
+			-ms-animation-delay: .9s;
+			-o-animation-delay: .9s;
+			animation-delay: .9s;
+			content: "";
+			position: absolute;
+		}
+		&:after {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 60px;
+			width: 60px;
+			margin-left: -1px;
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+			-webkit-box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+			-moz-box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+			-ms-box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+			-o-box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+			box-shadow: 0 0 0 0 rgba(93, 108, 193, .4);
+			-webkit-animation: ripple 3s infinite;
+			-moz-animation: ripple 3s infinite;
+			-ms-animation: ripple 3s infinite;
+			-o-animation: ripple 3s infinite;
+			animation: ripple 3s infinite;
+			-webkit-animation-delay: .6s;
+			-moz-animation-delay: .6s;
+			-ms-animation-delay: .6s;
+			-o-animation-delay: .6s;
+			animation-delay: .6s;
+			content: "";
+			position: absolute;
+		}
+	}
+}

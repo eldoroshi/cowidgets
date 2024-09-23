@@ -1,0 +1,242 @@
+.pricing-section{
+	position:relative;
+	
+
+	&:before{
+		position:absolute;
+		content:'';
+		left:0px;
+		top:0px;
+		right:0px;
+		height:550px;
+		background-color:#f3f5fb;
+	}
+	.auto-container {
+		position: static;
+		max-width: 1200px;
+		padding: 0px 15px;
+		margin: 0 auto;
+	}
+	.sec-title{
+		margin-bottom:35px;
+		 h2 {
+			position: relative;
+			color: #222222;
+			font-weight: 500;
+			line-height: 1.3em;
+		}
+	}
+	ul{
+		list-style: none;
+	}
+
+	.pricing-tabs {
+		position:relative;
+		.tabs-content .tab{
+			position:relative;
+			display:none;
+			transition: all 600ms ease;
+			-moz-transition: all 600ms ease;
+			-webkit-transition: all 600ms ease;
+			-ms-transition: all 600ms ease;
+			-o-transition: all 600ms ease;
+			transform:translateY(60px);
+			.content .pattern-layer-one{
+				position: absolute;
+				left: -115px;
+				top: -140px;
+				width: 294px;
+				height: 292px;
+				background-repeat: no-repeat;
+			}
+			
+			
+		}
+		.tabs-content .active-tab{
+			display:block;
+			transform:translateY(0px);
+		}
+
+	
+
+
+
+		.support{
+			position:relative;
+			color:#666666;
+			font-size:14px;
+			text-align:center;
+			margin-top:20px;
+			a{
+				position:relative;
+				color:#5d6cc1;
+				font-size:14px;
+				font-weight:500;
+				text-decoration:underline;
+			}
+		}
+
+		.title-column{
+			position:relative;
+			text-align:center;
+			margin-bottom:105px;
+		}
+
+		.tab-buttons{
+			position:relative;
+			text-align:center;
+			display:inline-block;
+			.tab-btn{
+				position:relative;
+				color:#c0c0c0;
+				font-size:18px;
+				font-weight:400;
+				float:left;
+				cursor:pointer;
+				margin:0px 20px;
+				line-height:24px;
+				text-transform:capitalize;
+				-webkit-transition:all 300ms ease;
+				-ms-transition:all 300ms ease;
+				-o-transition:all 300ms ease;
+				-moz-transition:all 300ms ease;
+				transition:all 300ms ease;
+			}
+			.boll{
+				position:relative;
+				width: 60px;
+				height: 30px;
+				padding:2.5px 2px 2px;
+				border-radius:50px;
+				float:left;
+				text-align:left;
+				background-color:#5d6cc1;
+				.round{
+					position:relative;
+					width:24px;
+					height:24px;
+					border-radius:50px;
+					display:inline-block;
+					background-color:#ffffff;
+					-webkit-transition:all 300ms ease;
+					-ms-transition:all 300ms ease;
+					-o-transition:all 300ms ease;
+					-moz-transition:all 300ms ease;
+					transition:all 300ms ease;
+				}
+				.round.boll-right{
+					transform:translateX(31px);
+				}
+			}
+			.tab-btn:hover,
+			.tab-btn.active-btn{
+				color:#222222;
+			}
+			
+		}
+	}
+
+
+	.price-block{
+		position:relative;
+		margin-bottom:30px;
+		.inner-box{
+			position:relative;
+			border-radius:8px;
+			text-align:center;
+			padding:45px 0px 50px;
+			background-color:#ffffff;
+			box-shadow:0px 5px 25px rgba(0,0,0,0.07);
+			.most-popular{
+				position:absolute;
+				left:0px;
+				top:-39px;
+				width:100%;
+				color:#ffffff;
+				font-size:13px;
+				font-weight:500;
+				padding:8px 15px;
+				text-align:center;
+				letter-spacing:1px;
+				text-transform:uppercase;
+				border-radius:5px 5px 0px 0px;
+				background-color:#2ed47d;
+			}
+			.title{
+				position:relative;
+				color:#5d6cc1;
+				font-size:22px;
+				font-family: 'Jost', sans-serif;
+			}
+			.price{
+				position:relative;
+				color:#5d6cc1;
+				font-size:52px;
+				text-align:center;
+				font-weight:300;
+				line-height:1em;
+				margin-top:22px;
+				margin-bottom:30px;
+				font-family: 'Jost', sans-serif;
+			}
+			ul{
+				position:relative;
+				padding: 0;
+			}
+			ul li{
+				position:relative;
+				color:#666666;
+				font-size:16px;
+				margin-bottom:14px;
+			}
+			.button-box{
+				position:relative;
+				padding-top:40px;
+				margin-top:50px;
+				border-top:1px solid #e7e7e7;
+				.theme-btn {
+					display: inline-block;
+					transition: all 0.3s ease;
+					-moz-transition: all 0.3s ease;
+					-webkit-transition: all 0.3s ease;
+					-ms-transition: all 0.3s ease;
+					-o-transition: all 0.3s ease;
+				}
+				.btn-style-nine {
+					position: relative;
+					display: inline-block;
+					font-size: 14px;
+					line-height: 30px;
+					color: #5d6cc1;
+					padding: 13px 52px;
+					font-weight: 500;
+					overflow: hidden;
+					border-radius: 50px;
+					overflow: hidden;
+					text-transform: capitalize;
+					border: 2px solid #5d6cc1;
+				}
+				
+			}
+			
+			
+		}
+	}
+
+}
+
+.pricing-section2{
+	position:relative;
+	padding:90px 0px 90px;
+
+
+	&:before{
+		position:absolute;
+		content:'';
+		left:0px;
+		top:0px;
+		right:0px;
+		height:647px;
+		background-color:transparent;
+	}
+}

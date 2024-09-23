@@ -1,0 +1,51 @@
+.ce-staff-style-beas{
+    img{
+        border-radius:50%;
+        width:270px !important;
+        max-height:270px;
+        margin:0 auto;
+    }
+    .team-content{
+        text-align:center;
+        h4{
+            margin-top:24px;
+        }
+  
+        .team-position{
+            margin-top:8px;
+        }
+  
+        .team-socials{
+            margin-top:32px;
+  
+            a{
+              padding:0 12px;
+            }
+        }
+    }
+}
+.ce-staff-style-default{
+    img{
+        border-radius:50%;
+        width:220px !important;
+        max-height:220px;
+        margin:0 auto;
+    }
+    .team-content{
+        text-align:center;
+        h4{
+            margin-top:24px;
+        }
+  
+        .team-position{
+            margin-top:8px;
+        }
+  
+        .team-socials{
+            margin-top:10px;
+            a{              
+              padding:0 12px;
+            }
+        }
+    }  
+}

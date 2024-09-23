@@ -1,0 +1,115 @@
+span.ce-shortcode-col-wrap > input {
+    background: inherit;
+    color: inherit;
+    font-size: 12px;
+    border: none;
+    box-shadow: none;
+    padding: 4px 8px;
+    margin: 0;
+}
+
+input.ce-large-text{
+    width: 99%;
+}
+
+.ce-options-row-heading {
+    border-right: 1px solid #E1E1E1;
+    padding: 15px;
+    width: 45%;
+    vertical-align: middle;
+}
+
+.ce-options-row td {
+    padding-left: 12px;
+    padding-right: 12px;
+    border-bottom: 1px solid #f0f0f0;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.ce-options-table .ce-options-row-content {
+    padding: 15px 10px;
+    position: relative;
+    width: 55%;
+}
+
+.ce-options-table.widefat{
+	border-width: 0;
+}
+
+#ece-meta-box .inside {
+    margin: 0;
+    padding: 0;
+}
+
+.ce-options-row-heading label {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 1.4em;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 3px;
+    color: #333;
+}
+
+.ce-options-row-content select {
+    width: 95%;
+}
+
+.ce-options-row-heading-help{
+    color: #b3b3b3;
+    cursor: help;
+    float: right;
+    font-size: 18px;
+}
+
+.ce_radio_options {
+    display: inline-block;
+}
+
+li#toplevel_page_Settings-page {
+    display: none;
+}
+
+.wp-admin #adminmenu .wp-submenu a[href="themes.php?page=ce-settings"] {
+    display:none;
+}
+
+.appearance_page_ce-settings #adminmenu .wp-submenu a[href ="edit.php?post_type=elementor-ce" ] {
+    color: white;
+    font-weight: 600;
+}
+
+.ce-heading-inline{
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0;
+    padding: 9px 0 4px 0;
+    line-height: 1.3;
+}
+
+.ce-selected-template-type-custom .bsf-target-rules-row,
+.ce-selected-template-type-custom .enable-for-canvas {
+    display: none;
+}
+
+.ce-selected-template-type-custom .ce-shortcode {
+    display: table-row;
+}
+.ce-shortcode {
+    display: none;
+}
+
+.ce-selected-template-type-none .bsf-target-rules-row,
+.ce-selected-template-type-none .ce-shortcode,
+.ce-selected-template-type-none .enable-for-canvas {
+    display: none;
+}
+
+.ce-options-table:not(.ce-selected-template-type-type_header) .transparent-header{
+    display:none;
+}
+
+.ce-options-table:not(.ce-selected-template-type-type_footer) .transparent-footer{
+    display:none;
+}

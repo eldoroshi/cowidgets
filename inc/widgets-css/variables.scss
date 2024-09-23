@@ -1,0 +1,84 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 1024px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
+ // Custom devices
+@mixin rwd($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+ }
+
+ @mixin rmax($max) { 
+    @media (max-width:$max+'px') {
+        @content; 
+    }
+ }
+
+ @mixin min_max($min, $max) { 
+    @media (min-width: $min+'px') and (max-width:$max+'px') {
+        @content; 
+    }
+ }
+
+ @mixin only_responsive{
+     @media (max-width:991px){
+         @content;
+     }
+ }
+
+ @mixin placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}  
+  }
+
+@mixin transform( $property ){
+    -webkit-transform: $property;
+      -ms-transform: $property;
+          transform: $property;
+}
+
+@mixin transition( $property ){
+    -webkit-transition: $property cubic-bezier(.785,.135,.15,.86);
+      -ms-transition: $property cubic-bezier(.785,.135,.15,.86);
+          transition: $property cubic-bezier(.785,.135,.15,.86);
+}
