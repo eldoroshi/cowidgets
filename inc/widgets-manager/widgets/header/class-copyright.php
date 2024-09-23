@@ -8,11 +8,10 @@
 namespace COWIDGETS\WidgetsManager\Widgets;
 
 use Elementor\Controls_Manager;
-use Elementor\Utils;
 use Elementor\Group_Control_Typography;
-use Elementor\Core\Schemes\Typography;
-use Elementor\Core\Schemes\Color;
 use Elementor\Widget_Base;
+use Elementor\Core\Kits\Documents\Tabs\Global_Colors;
+use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;   // Exit if accessed directly.
@@ -154,9 +153,8 @@ class Copyright extends Widget_Base {
 			[
 				'label'     => __( 'Text Color', 'cowidgets' ),
 				'type'      => Controls_Manager::COLOR,
-				'scheme'    => [
-					'type'  => Color::get_type(),
-					'value' => Color::COLOR_3,
+				'global'    => [
+					'default' => Global_Colors::COLOR_TEXT,
 				],
 				'selectors' => [
 					// Stronger selector to avoid section style from overwriting.
@@ -170,7 +168,9 @@ class Copyright extends Widget_Base {
 			[
 				'name'     => 'caption_typography',
 				'selector' => '{{WRAPPER}} .ce-copyright-wrapper, {{WRAPPER}} .ce-copyright-wrapper a',
-				'scheme'   => Typography::TYPOGRAPHY_3,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_TEXT,
+				],
 			]
 		);
 	}

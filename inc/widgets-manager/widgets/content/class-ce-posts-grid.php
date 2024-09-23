@@ -8,12 +8,9 @@
 namespace COWIDGETS\WidgetsManager\Widgets;
 
 use Elementor\Controls_Manager;
-use Elementor\Utils;
-use Elementor\Group_Control_Typography;
-use Elementor\Core\Schemes\Typography;
-use Elementor\Core\Schemes\Color;
 use Elementor\Widget_Base;
 use Elementor\Group_Control_Image_Size;
+use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;   // Exit if accessed directly.
@@ -290,7 +287,9 @@ class Posts_Grid extends Widget_Base {
 			[
 				'name' => 'item_title_typography',
 				'label' => __( 'Item Title Typography', 'plugin-domain' ),
-				'scheme' => Typography::TYPOGRAPHY_1,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
 				'selector' => '{{WRAPPER}} .ce-post-item .entry-title',
 			]
 		);
@@ -312,7 +311,9 @@ class Posts_Grid extends Widget_Base {
 			[
 				'name' => 'item_meta_typography',
 				'label' => __( 'Item Meta Typography', 'cowidgets' ),
-				'scheme' => Typography::TYPOGRAPHY_1,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
 				'selector' => '{{WRAPPER}} .ce-post-item .entry-meta-single',
 			]
 		);
@@ -334,7 +335,9 @@ class Posts_Grid extends Widget_Base {
 			[
 				'name' => 'item_content_typography',
 				'label' => __( 'Item Content Typography', 'cowidgets' ),
-				'scheme' => Typography::TYPOGRAPHY_1,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
 				'selector' => '{{WRAPPER}} .ce-post-item .entry-content',
 			]
 		);
@@ -356,7 +359,9 @@ class Posts_Grid extends Widget_Base {
 			[
 				'name' => 'item_readmore_typography',
 				'label' => __( '"Continue Reading" Typography', 'cowidgets' ),
-				'scheme' => Typography::TYPOGRAPHY_1,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
 				'selector' => '{{WRAPPER}} .ce-post-item .entry-readmore',
 			]
 		);

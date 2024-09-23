@@ -8,19 +8,16 @@
 namespace COWIDGETS\WidgetsManager\Widgets;
 
 use Elementor\Controls_Manager;
-use Elementor\Control_Media;
 use Elementor\Utils;
-use Elementor\Group_Control_Border;
 use Elementor\Group_Control_Typography;
 use Elementor\Group_Control_Box_Shadow;
-use Elementor\Core\Schemes\Typography;
-use Elementor\Core\Schemes\Color;
 use Elementor\Group_Control_Image_Size;
-use Elementor\Repeater;
 use Elementor\Group_Control_Css_Filter;
 use Elementor\Group_Control_Text_Shadow;
 use Elementor\Plugin;
 use Elementor\Widget_Base;
+use Elementor\Core\Kits\Documents\Tabs\Global_Colors;
+use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;   // Exit if accessed directly.
@@ -411,9 +408,8 @@ class Site_Logo extends Widget_Base {
 			[
 				'label'     => __( 'Border Color', 'cowidgets' ),
 				'type'      => Controls_Manager::COLOR,
-				'scheme'    => [
-					'type'  => Color::get_type(),
-					'value' => Color::COLOR_1,
+				'global'    => [
+					'default' => Global_Colors::COLOR_PRIMARY,
 				],
 				'condition' => [
 					'site_logo_image_border!' => 'none',
@@ -574,9 +570,8 @@ class Site_Logo extends Widget_Base {
 				'selectors' => [
 					'{{WRAPPER}} .widget-image-caption' => 'color: {{VALUE}};',
 				],
-				'scheme'    => [
-					'type'  => Color::get_type(),
-					'value' => Color::COLOR_3,
+				'global'    => [
+					'default' => Global_Colors::COLOR_TEXT,
 				],
 			]
 		);
@@ -597,7 +592,9 @@ class Site_Logo extends Widget_Base {
 			[
 				'name'     => 'caption_typography',
 				'selector' => '{{WRAPPER}} .widget-image-caption',
-				'scheme'   => Typography::TYPOGRAPHY_3,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_TEXT,
+				],
 			]
 		);
 
