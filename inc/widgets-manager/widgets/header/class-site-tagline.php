@@ -9,10 +9,9 @@ namespace COWIDGETS\WidgetsManager\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
-use Elementor\Core\Schemes\Typography;
 use Elementor\Widget_Base;
-use Elementor\Group_Control_Text_Shadow;
-use Elementor\Core\Schemes\Color;
+use Elementor\Core\Kits\Documents\Tabs\Global_Colors;
+use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;   // Exit if accessed directly.
@@ -194,7 +193,9 @@ class Site_Tagline extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'     => 'tagline_typography',
-				'scheme'   => Typography::TYPOGRAPHY_2,
+				'global'   => [
+					'default' => Global_Typography::TYPOGRAPHY_SECONDARY,
+				],
 				'selector' => '{{WRAPPER}} .ce-site-tagline',
 			]
 		);
@@ -203,9 +204,8 @@ class Site_Tagline extends Widget_Base {
 			[
 				'label'     => __( 'Color', 'cowidgets' ),
 				'type'      => Controls_Manager::COLOR,
-				'scheme'    => [
-					'type'  => Color::get_type(),
-					'value' => Color::COLOR_2,
+				'global'    => [
+					'default' => Global_Colors::COLOR_SECONDARY,
 				],
 				'selectors' => [
 					'{{WRAPPER}} .ce-site-tagline' => 'color: {{VALUE}};',
@@ -220,9 +220,8 @@ class Site_Tagline extends Widget_Base {
 			[
 				'label'     => __( 'Icon Color', 'cowidgets' ),
 				'type'      => Controls_Manager::COLOR,
-				'scheme'    => [
-					'type'  => Color::get_type(),
-					'value' => Color::COLOR_1,
+				'global'    => [
+					'default' => Global_Colors::COLOR_PRIMARY,
 				],
 				'condition' => [
 					'icon[value]!' => '',

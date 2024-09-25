@@ -9,10 +9,10 @@ namespace COWIDGETS\WidgetsManager\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
-use Elementor\Core\Schemes\Typography;
 use Elementor\Widget_Base;
 use Elementor\Group_Control_Text_Shadow;
-use Elementor\Core\Schemes\Color;
+use Elementor\Core\Kits\Documents\Tabs\Global_Colors;
+use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;   // Exit if accessed directly.
@@ -277,7 +277,9 @@ class Site_Title extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'     => 'heading_typography',
-				'scheme'   => Typography::TYPOGRAPHY_1,
+				'global'   => [
+					'default' => Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
 				'selector' => '{{WRAPPER}} .elementor-heading-title, {{WRAPPER}} .ce-heading a',
 			]
 		);
@@ -286,9 +288,8 @@ class Site_Title extends Widget_Base {
 			[
 				'label'     => __( 'Color', 'cowidgets' ),
 				'type'      => Controls_Manager::COLOR,
-				'scheme'    => [
-					'type'  => Color::get_type(),
-					'value' => Color::COLOR_1,
+				'global'    => [
+					'default' => Global_Colors::COLOR_PRIMARY,
 				],
 				'selectors' => [
 					'{{WRAPPER}} .ce-heading-text' => 'color: {{VALUE}};',
@@ -349,9 +350,8 @@ class Site_Title extends Widget_Base {
 			[
 				'label'     => __( 'Icon Color', 'cowidgets' ),
 				'type'      => Controls_Manager::COLOR,
-				'scheme'    => [
-					'type'  => Color::get_type(),
-					'value' => Color::COLOR_1,
+				'global'    => [
+					'default' => Global_Colors::COLOR_PRIMARY,
 				],
 				'condition' => [
 					'icon[value]!' => '',

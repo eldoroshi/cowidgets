@@ -8,12 +8,9 @@
 namespace COWIDGETS\WidgetsManager\Widgets;
 
 use Elementor\Controls_Manager;
-use Elementor\Utils;
-use Elementor\Group_Control_Typography;
-use Elementor\Core\Schemes\Typography;
-use Elementor\Core\Schemes\Color;
 use Elementor\Widget_Base;
 use Elementor\Group_Control_Image_Size;
+use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;   // Exit if accessed directly.
@@ -356,7 +353,9 @@ class Portfolio_Grid extends Widget_Base {
 			[
 				'name' => 'item_title_typography',
 				'label' => __( 'Item Title Typography', 'plugin-domain' ),
-				'scheme' => Typography::TYPOGRAPHY_1,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
 				'selector' => '{{WRAPPER}} .ce-portfolio-item .portfolio-title, body.ce-portfolio-follow-erzen .ce-fixed-follow .portfolio-title',
 			]
 		);
@@ -366,7 +365,9 @@ class Portfolio_Grid extends Widget_Base {
 			[
 				'name' => 'filter_links_typography',
 				'label' => __( 'Filter Links Typography', 'plugin-domain' ),
-				'scheme' => Typography::TYPOGRAPHY_1,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
 				'selector' => '{{WRAPPER}} .ce-filters button',
 				'condition' => [
                     'module' => 'predefined'
@@ -391,7 +392,9 @@ class Portfolio_Grid extends Widget_Base {
 			[
 				'name' => 'item_cats_typography',
 				'label' => __( 'Item Categories Typography', 'plugin-domain' ),
-				'scheme' => Typography::TYPOGRAPHY_1,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
 				'selector' => '{{WRAPPER}} .ce-portfolio-item .portfolio-categories, body.ce-portfolio-follow-erzen .ce-fixed-follow .portfolio-categories',
 			]
 		);
