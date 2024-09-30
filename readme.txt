@@ -2,7 +2,7 @@
 Contributors: codelessthemes
 Tags: addons, elementor, header footer builder, elementor addon, elementor extensions, elementor widgets
 Requires at least: 4.4
-Requires PHP: 5.6
+Requires PHP: 7.4
 Tested up to: 6.5.4
 Stable tag: 1.2.0
 License: GPLv2 or later
@@ -126,7 +126,6 @@ This same applies when you are creating your Header/Footer using this plugin.
 * Fixed: Kiri not loading images
 * Fixed: Hudson Scroll text removed
 * Fixed: Small css issues
-
 
 = 1.0.1 =
 * Added Specular Compat
